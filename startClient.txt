@@ -1,0 +1,1 @@
+java -cp /Users/AtoTheZ/Dropbox/Projects/Java/558_project2/src/:/Users/AtoTheZ/Dropbox/Projects/Java/558_project2/public_html/classes/compute.jar -Djava.rmi.server.codebase=http://localhost/~AtoTheZ/classes/ -Djava.security.policy=/Users/AtoTheZ/Dropbox/Projects/Java/558_project2/client.policy client.ComputePi localhost 45
