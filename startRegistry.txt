@@ -1,7 +1,9 @@
+javac -cp ~/Dropbox/Projects/Java/558_project2/public_html/classes/compute.jar client/ComputePi.java client/Pi.java
+
+javac -cp ~/Dropbox/Projects/Java/558_project2/public_html/classes/compute.jar engine/ComputeEngine.java 
 
 
-
-
+rmiregistry &
 
 
 

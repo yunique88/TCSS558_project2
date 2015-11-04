@@ -15,7 +15,8 @@ public class ComputePi {
             Registry registry = LocateRegistry.getRegistry(args[0]);
             Compute comp = (Compute) registry.lookup(name);
             Pi task = new Pi(Integer.parseInt(args[1]));
-            BigDecimal pi = comp.executeTask(task);
+            String pi = comp.executeTask(task);
+//            String pi = comp.put("String", "st2");
             System.out.println(pi);
         } catch (Exception e) {
             System.err.println("ComputePi exception:");

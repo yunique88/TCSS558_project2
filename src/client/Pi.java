@@ -4,7 +4,7 @@ import compute.Task;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Pi implements Task<BigDecimal>, Serializable {
+public class Pi implements Task<String>, Serializable {
 
     private static final long serialVersionUID = 227L;
 
@@ -30,7 +30,7 @@ public class Pi implements Task<BigDecimal>, Serializable {
     /**
      * Calculate pi.
      */
-    public BigDecimal execute() {
+    public String execute() {
         return computePi(digits);
     }
 
@@ -44,14 +44,15 @@ public class Pi implements Task<BigDecimal>, Serializable {
      * and a power series expansion of arctan(x) to 
      * sufficient precision.
      */
-    public static BigDecimal computePi(int digits) {
+    public static String computePi(int digits) {
         int scale = digits + 5;
         BigDecimal arctan1_5 = arctan(5, scale);
         BigDecimal arctan1_239 = arctan(239, scale);
         BigDecimal pi = arctan1_5.multiply(FOUR).subtract(
                                   arctan1_239).multiply(FOUR);
-        return pi.setScale(digits, 
-                           BigDecimal.ROUND_HALF_UP);
+//        return pi.setScale(digits, 
+//                           BigDecimal.ROUND_HALF_UP);
+        return "YEY";
     }
     /**
      * Compute the value, in radians, of the arctangent of 

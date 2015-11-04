@@ -13,9 +13,29 @@ public class ComputeEngine implements Compute {
         super();
     }
 
+    // gets stub, implements it.
     public <T> T executeTask(Task<T> t) {
         return t.execute();
     }
+    
+    public String put(String a, String b) {
+    	return "A";
+    }
+//    public <T> T put(Task<T> t) {
+//        return t.execute();
+//    }
+//    
+//    public <T> T get(Task<T> t) {
+//        return t.execute();
+//    }
+//    
+//    public <T> T delete(Task<T> t) {
+//        return t.execute();
+//    }
+    
+    
+    
+    
 
     public static void main(String[] args) {
         if (System.getSecurityManager() == null) {
