@@ -1,0 +1,4 @@
+
+public enum KeyValueCode {PUT, GET, GET_KEY_MISSING, DELETE, 
+		DELETE_KEY_MISSING
+}
